@@ -1,7 +1,16 @@
 <template>
   <Layout>
     <b-container>
-      <h1 class="font-weight-bold"><span class="text-primary pr-2">SObat</span> <span class="text-secondary">Rp</span></h1>
+      <div class="title">
+        <h1 class="font-weight-bold">
+          <span class="text-primary mr-2">SObat</span>
+          <span class="text-secondary">Rp</span>
+        </h1>
+        <h5>
+          <span class="text-primary mr-2">Solar Baterai</span>
+          <span class="text-secondary">Rumah Pintar</span>
+        </h5>
+      </div>
     </b-container>
   </Layout>
 </template>
@@ -9,13 +18,11 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Home"
   }
-}
+};
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
+<style lang="scss">
+
 </style>
