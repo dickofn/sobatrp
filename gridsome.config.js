@@ -8,21 +8,3 @@ module.exports = {
   siteName: "Gridsome",
   plugins: []
 };
-
-module.exports = {
-  plugins: [
-    {
-      use: 'gridsome-plugin-tailwindcss',
-      /* These are the default options. You don't need to set any options to get going.
-      options: {
-        tailwindConfig: './some/file/js',
-        purgeConfig: {},
-        presetEnvConfig: {},
-        shouldPurge: true,
-        shouldImport: true,
-        shouldTimeTravel: true
-      }
-      */
-    }
-  ]
-}
