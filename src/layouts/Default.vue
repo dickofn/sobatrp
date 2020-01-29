@@ -16,7 +16,7 @@
         </b-container>
       </b-navbar>
     </header>
-    <div class="content">
+    <div class="body">
       <slot />
     </div>
     <footer class="footer">
@@ -76,7 +76,7 @@ export default {
   }
 }
 
-.content {
+.body {
   margin-top: 7.4rem;
 
   @media (max-width: 768px) {
