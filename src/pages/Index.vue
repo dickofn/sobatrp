@@ -18,7 +18,7 @@
     <section class="benefit">
       <b-container>
         <h4 class="title text-title">What Do You Get from SObat Rp ?</h4>
-        <h5 class="subtitle mb-5">A Hybrid Solar System – Renewable and Clean Energy</h5>
+        <h5 class="subtitle text-subtitle mb-5">A Hybrid Solar System – Renewable and Clean Energy</h5>
         <div class="list my-5 pb-5">
           <div class="list-item">
             <div class="index mr-3">1.</div>
@@ -52,7 +52,7 @@
             </b-table-simple>
           </b-col>
         </b-row>
-        <h5 class="subtitle my-5">Benefits:</h5>
+        <h5 class="subtitle text-subtitle my-5">Benefits:</h5>
         <div class="list">
           <div class="list-item">High Quality Products</div>
           <div class="list-item">Innovative Payment and Pricing Scheme</div>
@@ -66,7 +66,33 @@
       </b-container>
     </section>
 
-    <section class></section>
+    <section class="panel">
+      <b-container>
+        <h4 class="title text-title">Solar Panel</h4>
+        <div class="cards font-weight-light">
+          <b-row class="justify-space-between">
+            <b-col class="card-container" sm="12" md="6" lg="3">
+              <div class="card">High conversion efficiency and more power output per square meter</div>
+            </b-col>
+            <b-col class="card-container" sm="12" md="6" lg="3">
+              <div
+                class="card"
+              >High Transmission glass feature a unique anti-reflective coating that directs more light on the solar cells, resulting in higher energy yield.</div>
+            </b-col>
+            <b-col class="card-container" sm="12" md="6" lg="3">
+              <div
+                class="card"
+              >Tested in accordance to the standard IEC 62804, our PV modules have demonstrated resistance against PID (Potential Induced Degradation)</div>
+            </b-col>
+            <b-col class="card-container" sm="12" md="6" lg="3">
+              <div
+                class="card"
+              >Durable PV modules, independently tested for harsh inviromental conditions such as exposure to salt mist, ammonia and known PID risk factors</div>
+            </b-col>
+          </b-row>
+        </div>
+      </b-container>
+    </section>
   </Layout>
 </template>
 
@@ -76,8 +102,7 @@ export default {
     title: "Home"
   },
   data() {
-    return {
-    };
+    return {};
   }
 };
 </script>
@@ -88,12 +113,18 @@ export default {
     text-align: center;
     color: var(--primary);
     font-weight: 700;
+    font-size: 4rem;
     margin-bottom: 5rem;
   }
 
+  .text-subtitle {
+    color: var(--secondary);
+    font-weight: 300;
+  }
+
   & section.top {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     background: linear-gradient(
         to right,
         rgba(#000, 0.9),
@@ -105,7 +136,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 
   & section.benefit {
@@ -121,6 +152,56 @@ export default {
 
         &:not(:last-child) {
           margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  & section.panel {
+    padding-top: 25rem;
+    padding-bottom: 25rem;
+    margin-bottom: 8rem;
+    background: linear-gradient(
+        to right,
+        rgba(#000, 0.9),
+        rgba(#1b3003, 0.9),
+        rgba(#326305, 0.6)
+      ),
+      url("~@/assets/img/bg-1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: skewY(-3deg);
+
+    & > * {
+      transform: skewY(3deg);
+    }
+
+    .cards {
+      .card-container {
+        .card {
+          background-color: rgba(#fff, 0.3);
+          color: #ddd;
+          padding: 2rem;
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          font-size: 1.3rem;
+          letter-spacing: 3px;
+          transition: all 0.2s;
+
+          &:hover {
+            transform: scale(1.1) translateY(-1rem);
+            box-shadow: 0 1rem 2rem #000;
+          }
+        }
+
+        @media (max-width: 992px) {
+          min-height: 10rem;
+          margin-bottom: 2rem;
         }
       }
     }
