@@ -35,11 +35,38 @@
         </div>
         <b-row class="justify-content-center">
           <b-col sm="12" md="8">
-            <b-table fixed :items="items" :fields="fields"></b-table>
+            <b-table-simple fixed thead-class="hidden_header">
+              <b-tbody>
+                <b-tr>
+                  <b-td rowspan="2">P type monocrystalline Silicon Photovoltaics Solar Panel</b-td>
+                  <b-td>Power Conversion System (PCS)</b-td>
+                </b-tr>
+                <b-tr>
+                  <b-td>LED Lighting System</b-td>
+                </b-tr>
+                <b-tr>
+                  <b-td>Lithium Ion Battery</b-td>
+                  <b-td>Smart Application</b-td>
+                </b-tr>
+              </b-tbody>
+            </b-table-simple>
           </b-col>
         </b-row>
+        <h5 class="subtitle my-5">Benefits:</h5>
+        <div class="list">
+          <div class="list-item">High Quality Products</div>
+          <div class="list-item">Innovative Payment and Pricing Scheme</div>
+          <div class="list-item">Reliable and Long Life</div>
+          <div class="list-item">Free Installation and Maintenance and 24hr Service Care</div>
+          <div
+            class="list-item"
+          >Custom Designed System Based on Usage Characteristic to Maximize Your Efficiency</div>
+          <div class="list-item">Reduce Carbon Footprint</div>
+        </div>
       </b-container>
     </section>
+
+    <section class></section>
   </Layout>
 </template>
 
@@ -50,20 +77,6 @@ export default {
   },
   data() {
     return {
-      fields: [
-        {
-          key: "row_1",
-          label: "P type monocrystalline Silicon Photovoltaics Solar Panel"
-        },
-        {
-          key: "row_2",
-          label: "Power Conversion System (PCS)"
-        }
-      ],
-      items: [
-        { row_1: "Lithium Ion Battery", row_2: "LED Lighting System" },
-        { row_1: "", row_2: "Smart Application" }
-      ]
     };
   }
 };
@@ -118,8 +131,8 @@ export default {
 <style lang="scss">
 .layout.home {
   & section.benefit {
-    .table thead th {
-      vertical-align: middle;
+    .hidden_header {
+      display: none;
     }
   }
 }
