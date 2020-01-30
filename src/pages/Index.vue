@@ -92,9 +92,9 @@
           </b-row>
         </div>
         <div class="info">
-          <div class="info-item"> &nbsp; Applying the latest technology and well proven of P-type</div>
-          <div class="info-item"> &nbsp; 20.6% Cell Efficiency</div>
-          <div class="info-item"> &nbsp; 0-5 W Power Tolerance</div>
+          <div class="info-item">&#9635; &nbsp; Applying the latest technology and well proven of P-type</div>
+          <div class="info-item">&#9635; &nbsp; 20.6% Cell Efficiency</div>
+          <div class="info-item">&#9635; &nbsp; 0-5 W Power Tolerance</div>
         </div>
       </b-container>
     </section>
@@ -102,6 +102,7 @@
     <section class="battery">
       <b-container>
         <h4 class="title text-title">Lithium Ion Battery</h4>
+        
       </b-container>
     </section>
   </Layout>
@@ -142,7 +143,7 @@ export default {
         rgba(#1b3003, 0.9),
         rgba(#326305, 0.6)
       ),
-      url("~@/assets/img/bg-1.jpg");
+      url("~@/assets/img/forest.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -192,9 +193,10 @@ export default {
       left: 0;
       right: 0;
       bottom: 0;
-      background: url("~@/assets/img/bg-1.jpg");
+      background: url("~@/assets/img/panel.jpg");
+      background-size: cover;
       background-attachment: fixed;
-      background-position: center;
+      background-position: bottom;
       background-repeat: no-repeat;
     }
 
@@ -265,6 +267,11 @@ export default {
         }
       }
     }
+  }
+
+  & section.battery {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 </style>
