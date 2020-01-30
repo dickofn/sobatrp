@@ -91,6 +91,17 @@
             </b-col>
           </b-row>
         </div>
+        <div class="info">
+          <div class="info-item"> &nbsp; Applying the latest technology and well proven of P-type</div>
+          <div class="info-item"> &nbsp; 20.6% Cell Efficiency</div>
+          <div class="info-item"> &nbsp; 0-5 W Power Tolerance</div>
+        </div>
+      </b-container>
+    </section>
+
+    <section class="battery">
+      <b-container>
+        <h4 class="title text-title">Lithium Ion Battery</h4>
       </b-container>
     </section>
   </Layout>
@@ -164,6 +175,15 @@ export default {
     margin-bottom: 8rem;
     transform: skewY(-3deg);
 
+    @media (max-width: 992px) {
+      padding-top: 15rem;
+      padding-bottom: 15rem;
+    }
+    @media (max-width: 768px) {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+
     &::before {
       position: absolute;
       z-index: -2;
@@ -191,13 +211,16 @@ export default {
         rgba(#000, 0.9),
         rgba(#1b3003, 0.9),
         rgba(#326305, 0.6)
-      );    }
+      );
+    }
 
     & > * {
       transform: skewY(3deg);
     }
 
     .cards {
+      margin-bottom: 5rem;
+
       .card-container {
         .card {
           background-color: rgba(#fff, 0.3);
@@ -215,12 +238,30 @@ export default {
           &:hover {
             transform: scale(1.1) translateY(-1rem);
             box-shadow: 0 1rem 2rem #000;
+
+            @media (max-width: 992px) {
+              transform: scale(1.1);
+              box-shadow: 0 0 3srem #000;
+            }
           }
         }
 
         @media (max-width: 992px) {
           min-height: 10rem;
           margin-bottom: 2rem;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      .info-item {
+        color: #bbb;
+
+        &:not(:last-child) {
+          margin-right: 5rem;
         }
       }
     }
