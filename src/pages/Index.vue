@@ -92,7 +92,9 @@
           </b-row>
         </div>
         <div class="info">
-          <div class="info-item">&#9635; &nbsp; Applying the latest technology and well proven of P-type</div>
+          <div
+            class="info-item"
+          >&#9635; &nbsp; Applying the latest technology and well proven of P-type</div>
           <div class="info-item">&#9635; &nbsp; 20.6% Cell Efficiency</div>
           <div class="info-item">&#9635; &nbsp; 0-5 W Power Tolerance</div>
         </div>
@@ -102,7 +104,30 @@
     <section class="battery">
       <b-container>
         <h4 class="title text-title">Lithium Ion Battery</h4>
-        
+        <b-row align-v="center">
+          <b-col class="text-container" sm="12" lg="8" offset-lg="2">
+            <div class="flips">
+              <div class="flip-item flip-item--1">
+                <div class="flip flip--front">The Safest Lithium Battery</div>
+                <div
+                  class="flip flip--back"
+                >Chemically stable, Resist in High Temp without decomposing and not flammable</div>
+              </div>
+              <div class="flip-item flip-item--2">
+                <div class="flip flip--front">Optimal Energy</div>
+                <div class="flip flip--back">Density in volume and weight</div>
+              </div>
+              <div class="flip-item flip-item--3">
+                <div class="flip flip--front">High Efficiency</div>
+                <div class="flip flip--back">High charging rate reach 98%</div>
+              </div>
+              <div class="flip-item flip-item--4">
+                <div class="flip flip--front">Rechargeable and long life cycle</div>
+                <div class="flip flip--back">Over 4000 cycles</div>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
       </b-container>
     </section>
   </Layout>
@@ -270,8 +295,127 @@ export default {
   }
 
   & section.battery {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 12rem;
+
+    .text-container {
+      .flips {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .flip-item {
+          margin: 1rem;
+          width: 20%;
+          perspective: 150rem;
+          position: relative;
+          height: 30rem;
+
+          @media (max-width: 768px) {
+            height: auto;
+            width: 100%;
+          }
+
+          .flip {
+            height: 100%;
+            transition: all 0.8s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            backface-visibility: hidden;
+            border-radius: 3px;
+            overflow: hidden;
+            box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            @media (max-width: 768px) {
+              position: relative;
+              height: auto;
+              border-radius: 0;
+            }
+
+            &--front {
+              padding: 2rem;
+            }
+
+            &--back {
+              padding: 1rem;
+              transform: rotateY(180deg);
+              background-color: var(--secondary);
+              color: #fff;
+
+              @media (max-width: 768px) {
+                transform: rotateY(0);
+              }
+            }
+          }
+
+          &--1 .flip--front {
+            background: linear-gradient(
+                to right,
+                rgba(#000, 0.5),
+                rgba(#000, 0.5)
+              ),
+              url(~@/assets/img/shield.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #eee;
+          }
+          &--2 .flip--front {
+            background: linear-gradient(
+                to right,
+                rgba(#000, 0.5),
+                rgba(#000, 0.5)
+              ),
+              url(~@/assets/img/flow.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #eee;
+          }
+          &--3 .flip--front {
+            background: linear-gradient(
+                to right,
+                rgba(#000, 0.5),
+                rgba(#000, 0.5)
+              ),
+              url(~@/assets/img/chart.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #eee;
+          }
+          &--4 .flip--front {
+            background: linear-gradient(
+                to right,
+                rgba(#000, 0.5),
+                rgba(#000, 0.5)
+              ),
+              url(~@/assets/img/circular.jpg);
+            background-size: cover;
+            background-position: center;
+            color: #eee;
+          }
+
+          &:hover .flip--front {
+            transform: rotateY(-180deg);
+          }
+
+          &:hover .flip--back {
+            transform: rotateY(0);
+          }
+        }
+      }
+    }
+
+    .img-container {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 </style>
