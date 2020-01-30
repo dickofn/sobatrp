@@ -158,21 +158,40 @@ export default {
   }
 
   & section.panel {
+    position: relative;
     padding-top: 25rem;
     padding-bottom: 25rem;
     margin-bottom: 8rem;
-    background: linear-gradient(
+    transform: skewY(-3deg);
+
+    &::before {
+      position: absolute;
+      z-index: -2;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("~@/assets/img/bg-1.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
         to right,
         rgba(#000, 0.9),
         rgba(#1b3003, 0.9),
         rgba(#326305, 0.6)
-      ),
-      url("~@/assets/img/bg-1.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: skewY(-3deg);
+      );    }
 
     & > * {
       transform: skewY(3deg);
