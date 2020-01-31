@@ -4,7 +4,7 @@
       <b-navbar class="nav" toggleable="lg" type="light" variant="white" fixed="top">
         <b-container>
           <b-navbar-brand href="/">
-            <g-image class="nav__logo-img" src="~/assets/img/logo.jpeg" alt="Logo" />
+            <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" />
           </b-navbar-brand>
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
