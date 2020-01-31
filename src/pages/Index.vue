@@ -341,6 +341,7 @@ export default {
 
             &--front {
               padding: 2rem;
+              color: #eee;
             }
 
             &--back {
@@ -351,6 +352,7 @@ export default {
 
               @media (max-width: 768px) {
                 transform: rotateY(0);
+                min-height: 7rem;
               }
             }
           }
@@ -364,7 +366,6 @@ export default {
               url(~@/assets/img/shield.jpg);
             background-size: cover;
             background-position: center;
-            color: #eee;
           }
           &--2 .flip--front {
             background: linear-gradient(
@@ -375,7 +376,6 @@ export default {
               url(~@/assets/img/flow.jpg);
             background-size: cover;
             background-position: center;
-            color: #eee;
           }
           &--3 .flip--front {
             background: linear-gradient(
@@ -386,7 +386,6 @@ export default {
               url(~@/assets/img/chart.jpg);
             background-size: cover;
             background-position: center;
-            color: #eee;
           }
           &--4 .flip--front {
             background: linear-gradient(
@@ -397,11 +396,14 @@ export default {
               url(~@/assets/img/circular.jpg);
             background-size: cover;
             background-position: center;
-            color: #eee;
           }
 
           &:hover .flip--front {
             transform: rotateY(-180deg);
+
+            @media (max-width: 768px) {
+              transform: none;
+            }
           }
 
           &:hover .flip--back {
