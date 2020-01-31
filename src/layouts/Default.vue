@@ -55,9 +55,6 @@ export default {
       const dt = new Date();
       return dt.getUTCFullYear();
     }
-  },
-  created(){
-    console.log(this.$route);
   }
 };
 </script>
