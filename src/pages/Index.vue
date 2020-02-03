@@ -130,6 +130,40 @@
         </b-row>
       </b-container>
     </section>
+
+    <section class="inverter">
+      <b-container>
+        <div class="card">
+          <h4 class="card-title text-title">Inverter System</h4>
+          <div class="card-content">
+            <div class="list">
+              <div class="list-item">
+                <div class="index mr-3">&#9635;</div>
+                <div
+                  class="content"
+                >Automatic switch for efficiency between solar energy, battery and connect to grid</div>
+              </div>
+              <div class="list-item">
+                <div class="index mr-3">&#9635;</div>
+                <div
+                  class="content"
+                >Suitable for any electrical equipment and include voltage stabilizer</div>
+              </div>
+              <div class="list-item">
+                <div class="index mr-3">&#9635;</div>
+                <div class="content">Adjustable working mode based on requirements</div>
+              </div>
+              <div class="list-item">
+                <div class="index mr-3">&#9635;</div>
+                <div
+                  class="content"
+                >All around protection (overheat, short-current, overload) and self recovery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </b-container>
+    </section>
   </Layout>
 </template>
 
@@ -159,6 +193,19 @@ export default {
     font-weight: 300;
   }
 
+  .list {
+    display: flex;
+    flex-direction: column;
+
+    .list-item {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
   & section.top {
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -179,19 +226,6 @@ export default {
   & section.benefit {
     padding-top: 5rem;
     padding-bottom: 5rem;
-
-    .list {
-      display: flex;
-      flex-direction: column;
-
-      .list-item {
-        display: flex;
-
-        &:not(:last-child) {
-          margin-bottom: 1rem;
-        }
-      }
-    }
   }
 
   & section.panel {
@@ -416,6 +450,75 @@ export default {
     .img-container {
       img {
         width: 100%;
+      }
+    }
+  }
+
+  & section.inverter {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: linear-gradient(to right, rgba(#000, 0.3), rgba(#000, 0.3)),
+      url("~@/assets/img/panel-2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 992px) {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      background: linear-gradient(
+        to right,
+        rgba(#000, 0.8),
+        rgba(#1b3003, 0.7),
+        rgba(#326305, 0.6)
+      );
+
+      @media (max-width: 992px) {
+        background: linear-gradient(
+          to bottom,
+          rgba(#000, 0.9),
+          rgba(#326305, 0.7),
+          rgba(#326305, 0.6)
+        );
+        flex-direction: column;
+      }
+
+      .card-title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 10rem;
+
+        @media (max-width: 992px) {
+          justify-content: center;
+          padding: 5rem;
+        }
+      }
+
+      .card-content {
+        display: flex;
+        align-items: center;
+        padding: 10rem 5rem;
+        padding-left: 12.5rem;
+        background-color: rgba(#fff, 0.5);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 7.5rem 100%);
+
+        @media (max-width: 992px) {
+          padding: 5rem;
+          clip-path: none;
+        }
+
+        .list {
+          color: #333;
+        }
       }
     }
   }
