@@ -467,9 +467,11 @@ export default {
       .card-title {
         flex: 1;
         display: flex;
+        justify-content: center;
         align-items: center;
         margin-bottom: 0;
-        padding: 10rem;
+        padding: 10rem 5rem;
+        white-space: pre-wrap;
 
         @media (max-width: 992px) {
           justify-content: center;
