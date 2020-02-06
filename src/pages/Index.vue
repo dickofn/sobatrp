@@ -180,32 +180,6 @@ export default {
 
 <style lang="scss" scoped>
 .layout.home {
-  .text-title {
-    text-align: center;
-    color: var(--primary);
-    font-weight: 700;
-    font-size: 4rem;
-    margin-bottom: 5rem;
-  }
-
-  .text-subtitle {
-    color: var(--secondary);
-    font-weight: 300;
-  }
-
-  .list {
-    display: flex;
-    flex-direction: column;
-
-    .list-item {
-      display: flex;
-
-      &:not(:last-child) {
-        margin-bottom: 1rem;
-      }
-    }
-  }
-
   & section.top {
     padding-top: 10rem;
     padding-bottom: 10rem;
