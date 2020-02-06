@@ -9,7 +9,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Blogs'
+    title: 'Profile'
   }
 }
 </script>

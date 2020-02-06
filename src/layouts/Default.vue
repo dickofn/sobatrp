@@ -14,6 +14,8 @@
                 href="/"
                 :active="$route.path == '/'"
               >{{$static.metadata.siteName}}</b-nav-item>
+              <b-nav-item class="nav__item" href="/profile" :active="$route.path == '/profile'">Profile</b-nav-item>
+              <b-nav-item class="nav__item" href="/products" :active="$route.path == '/products'">Product Information</b-nav-item>
               <b-nav-item class="nav__item" href="/blogs" :active="$route.path == '/blogs'">Blogs</b-nav-item>
               <b-nav-item class="nav__item" v-scroll-to="'#footerContact'">Contact Us</b-nav-item>
             </b-navbar-nav>

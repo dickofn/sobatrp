@@ -1,5 +1,5 @@
 $theme-colors: (
-  "primary": #B4895F,
+  "primary": #b4895f,
   "secondary": #889873,
   "info": #eea915
 );
@@ -18,5 +18,17 @@ $navbar-light-color: rgba(#000, 0.7);
 $navbar-light-hover-color: map-get($theme-colors, "primary");
 $navbar-light-active-color: map-get($theme-colors, "primary");
 
-@import '~bootstrap/scss/bootstrap.scss';
-@import '~bootstrap-vue/src/index.scss';
+.construction {
+  min-height: 85vh;
+  background: url("~@/assets/img/construction.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap-vue/src/index.scss";
