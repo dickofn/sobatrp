@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header>
+    <header id="headerNav">
       <b-navbar class="nav" toggleable="lg" type="light" variant="white" fixed="top">
         <b-container>
           <b-navbar-brand href="/">
@@ -9,8 +9,13 @@
           <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item class="nav__item" href="/" :active="$route.path == '/'">{{$static.metadata.siteName}}</b-nav-item>
+              <b-nav-item
+                class="nav__item"
+                href="/"
+                :active="$route.path == '/'"
+              >{{$static.metadata.siteName}}</b-nav-item>
               <b-nav-item class="nav__item" href="/blogs" :active="$route.path == '/blogs'">Blogs</b-nav-item>
+              <b-nav-item class="nav__item" v-scroll-to="'#footerContact'">Contact Us</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-container>
@@ -19,17 +24,20 @@
     <div class="body">
       <slot />
     </div>
-    <footer class="footer">
+    <footer class="footer" id="footerContact">
       <div class="footer__top">
         <b-container>
           <b-row>
             <b-col sm="12" md="6" class="top__col">
-              <div class="text">Untuk informasi lebih lanjut hubungi kami.</div>
+              <div class="text">
+                <b>Untuk informasi lebih lanjut hubungi kami.</b>
+              </div>
               <div class="socials text"></div>
               <div class="text">
-                PT. Lentera Adhya Investama - Sentral Senayan 2, 20th Floor
+                PT. Lentera Adhya Investama
+                <br />Sentral Senayan 2, 20th Floor
                 <br />Jl. Asia Afrika No. 8 Jakarta 10270
-                <br />+6221 5795 4022 ext. 105
+                <br />+62 21 5795 4022 ext. 105
               </div>
             </b-col>
           </b-row>

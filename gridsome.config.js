@@ -6,5 +6,16 @@
 
 module.exports = {
   siteName: "sobatrp",
-  plugins: []
+  plugins: [
+    {
+      use: "gridsome-source-storyblok",
+      options: {
+        client: {
+          accessToken: "0D8o2iqjb60Xv3V2z7uimwtt"
+        },
+        version: 'public',
+        typeName: "StoryblokEntry"
+      }
+    }
+  ]
 };
