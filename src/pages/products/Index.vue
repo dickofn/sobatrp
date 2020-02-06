@@ -12,14 +12,14 @@
               SYSTEM ≥ 1MWH
             </div>
             <div class="list">
-              <div class="list-item">&#9635; 1 to 4MWh LiFePO4 battery system</div>
-              <div class="list-item">&#9635; HVAC(Heating, Ventilation and Air Conditioning)</div>
-              <div class="list-item">&#9635; Fire Fighting, Lighting System, Thunder-proof</div>
-              <div class="list-item">&#9635; AC &amp; DC distributor</div>
-              <div class="list-item">&#9635; Optional parts</div>
+              <div class="list-item"><div class="mr-3">&#9635;</div> 1 to 4MWh LiFePO4 battery system</div>
+              <div class="list-item"><div class="mr-3">&#9635;</div> HVAC(Heating, Ventilation and Air Conditioning)</div>
+              <div class="list-item"><div class="mr-3">&#9635;</div> Fire Fighting, Lighting System, Thunder-proof</div>
+              <div class="list-item"><div class="mr-3">&#9635;</div> AC &amp; DC distributor</div>
+              <div class="list-item"><div class="mr-3">&#9635;</div> Optional parts</div>
               <div
                 class="list-item"
-              >&#9635;&nbsp;SCADA (Supervisory Control And Data Acquisition) system</div>
+              ><div class="mr-3">&#9635;</div> SCADA (Supervisory Control And Data Acquisition) system</div>
             </div>
           </b-col>
         </b-row>
@@ -31,31 +31,31 @@
             <div class="title text-title">BATTERY SYSTEM</div>
             <div class="list">
               <div class="list-item">
-                &#9635;
+                <div class="mr-3">&#9635;</div>
                 1MWh(691.2V1440Ah) LFP battery system contains 6 Battery Clusters
               </div>
               <div class="list-item">
-                &#9635;
+                <div class="mr-3">&#9635;</div>
                 Each 165KWh(691.2V240Ah) Cluster is composed of 18pcs battery modules, 1pcs control modules
               </div>
               <div class="list-item">
-                &#9635;
+                <div class="mr-3">&#9635;</div>
                 Long lifetime (>4000cycles), high efficient (reach 98%), high safety LFP cells
               </div>
               <div class="list-item">
-                &#9635;
+                <div class="mr-3">&#9635;</div>
                 Complete fault and operation log recording function system
               </div>
               <div class="list-item">
-                &#9635;
+                <div class="mr-3">&#9635;</div>
                 Info storage time last one month
               </div>
               <div class="list-item">
-                &#9635;
+                <div class="mr-3">&#9635;</div>
                 Support RS485, Ethernet Communication
               </div>
               <div class="list-item">
-                &#9635;
+                <div class="mr-3">&#9635;</div>
                 Battery satisfied UL1973 certification
               </div>
             </div>
