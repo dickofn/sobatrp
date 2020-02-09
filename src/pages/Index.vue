@@ -406,6 +406,10 @@ export default {
             background-position: center;
           }
 
+          &:hover .flip {
+            box-shadow: 0 1rem 2rem rgba(#889873, 1);
+          }
+
           &:hover .flip--front {
             transform: rotateY(-180deg);
 
