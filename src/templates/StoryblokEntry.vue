@@ -1,17 +1,14 @@
 <template>
   <Layout>
-    <component
-      v-if="story.content.component"
-      :key="story.content._uid"
-      :blok="story.content"
-      :is="story.content.component"
-    />
+    {{ $page.post.content.title }}
+    <br />
+    <Richtext :text="$page.post.content.content"></Richtext>
   </Layout>
 </template>
 
 <page-query>
 query StoryblokEntry ($id: ID) {
-  storyblokEntry (id: $id) {
+  post: storyblokEntry (id: $id) {
     id
     slug
     content
@@ -20,12 +17,16 @@ query StoryblokEntry ($id: ID) {
 </page-query>
   
 <script>
+import Richtext from "~/components/Richtext.vue";
+
 export default {
-  name: "StoryblokEntryTemplate",
-  computed: {
-    story() {
-      return this.$page.storyblokEntry;
-    }
+  metaInfo() {
+    return {
+      title: this.$page.post.content.title
+    };
+  },
+  components: {
+    Richtext
   }
 };
 </script>
