@@ -14,8 +14,16 @@
                 href="/"
                 :active="$route.path == '/'"
               >{{$static.metadata.siteName}}</b-nav-item>
-              <b-nav-item class="nav__item" href="/profile" :active="$route.path == '/profile'">Profile</b-nav-item>
-              <b-nav-item class="nav__item" href="/products" :active="$route.path == '/products'">Product Information</b-nav-item>
+              <b-nav-item
+                class="nav__item"
+                href="/profile"
+                :active="$route.path == '/profile'"
+              >Profile</b-nav-item>
+              <b-nav-item
+                class="nav__item"
+                href="/products"
+                :active="$route.path == '/products'"
+              >Product Information</b-nav-item>
               <b-nav-item class="nav__item" href="/blogs" :active="$route.path == '/blogs'">Blogs</b-nav-item>
               <b-nav-item class="nav__item" v-scroll-to="'#footerContact'">Contact Us</b-nav-item>
             </b-navbar-nav>
@@ -24,7 +32,10 @@
       </b-navbar>
     </header>
     <div class="body">
-      <slot />
+      <div class="loading" v-if="$store.state.isLoading">
+        <b-spinner class="loading__spinner" label="Loading..." variant="primary"></b-spinner>
+      </div>
+      <slot v-else />
     </div>
     <footer class="footer" id="footerContact">
       <div class="footer__top">
@@ -88,6 +99,18 @@ export default {
 
   @media (max-width: 768px) {
     margin-top: 5.4rem;
+  }
+
+  .loading {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .loading__spinner {
+      height: 10rem;
+      width: 10rem;
+    }
   }
 }
 
