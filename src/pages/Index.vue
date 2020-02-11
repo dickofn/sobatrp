@@ -172,8 +172,8 @@ export default {
   metaInfo: {
     title: "Home"
   },
-  data() {
-    return {};
+  created() {
+    this.$store.dispatch("toogleLoading", false);
   }
 };
 </script>
