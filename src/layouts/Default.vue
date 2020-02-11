@@ -76,7 +76,13 @@ export default {
       const dt = new Date();
       return dt.getUTCFullYear();
     },
-    isLoading () {
+    isLoading() {
+      if (
+        this.$store.state.isLoading == null ||
+        this.$store.state.isLoading == undefined
+      ) {
+        return false;
+      }
       return this.$store.state.isLoading;
     }
   }
