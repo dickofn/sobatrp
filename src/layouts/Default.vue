@@ -32,10 +32,10 @@
       </b-navbar>
     </header>
     <div class="body">
-      <div class="loading" v-if="$store.state.isLoading">
+      <div class="loading" v-if="isLoading">
         <b-spinner class="loading__spinner" label="Loading..." variant="primary"></b-spinner>
       </div>
-      <slot v-else />
+      <slot />
     </div>
     <footer class="footer" id="footerContact">
       <div class="footer__top">
@@ -75,6 +75,9 @@ export default {
     thisYear() {
       const dt = new Date();
       return dt.getUTCFullYear();
+    },
+    isLoading () {
+      return this.$store.state.isLoading;
     }
   }
 };
