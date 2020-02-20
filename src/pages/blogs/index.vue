@@ -26,13 +26,15 @@
           </g-link>
         </b-col>
       </b-row>
-    </b-container>
 
-    <!-- <ul>
-        <li v-for="blog in blogs" :key="blog.full_slug">
-          <g-link :to="`blogs/blog/${blog.id}`">{{ blog.content.title }}</g-link>
-        </li>
-    </ul>-->
+      <b-row>
+        <b-container class="mb-5 pb-5">
+          <div class="overflow-auto">
+            <b-pagination-nav :link-gen="linkGen" :number-of-pages="pages" use-router align="right"></b-pagination-nav>
+          </div>
+        </b-container>
+      </b-row>
+    </b-container>
   </Layout>
 </template>
 
@@ -44,19 +46,28 @@ export default {
   data() {
     return {
       blogs: null,
-      page: 1
+      pages: 1,
+      perPage: 10,
     };
+  },
+  computed: {
+    page() {
+      return !!this.$route.query.page ? this.$route.query.page : 1;
+    }
   },
   methods: {
     async getBlogs(page) {
+      this.clearBlogs();
       const sb = this.$store.state.storyblok;
       this.$store.dispatch("toogleLoading", true);
       try {
         const res = await sb.get("cdn/stories", {
-          per_page: 10,
+          per_page: this.perPage,
           page: page,
           sort_by: "created_at:desc"
         });
+
+        this.pages = res.total / res.perPage;
         this.blogs = res.data.stories;
         this.$store.dispatch("toogleLoading", false);
       } catch (e) {
@@ -64,10 +75,21 @@ export default {
         alert("Something wrong please refresh the page");
         this.$store.dispatch("toogleLoading", false);
       }
+    },
+    linkGen(pageNum) {
+      return pageNum === 1 ? "?" : `?page=${pageNum}`;
+    },
+    clearBlogs() {
+      this.blogs = null;
+    }
+  },
+  watch: {
+    page(index) {
+      this.getBlogs(index);
     }
   },
   created() {
-    this.getBlogs(1);
+    this.getBlogs(this.page);
   }
 };
 </script>
@@ -156,6 +178,20 @@ export default {
             opacity: 0;
           }
         }
+      }
+    }
+  }
+}
+</style>
+
+<style lang="scss">
+.layout.blogs {
+  @media (max-width: 992px) {
+    .b-pagination {
+      text-align: center;
+
+      & > * {
+        flex: 1 1 auto;
       }
     }
   }
