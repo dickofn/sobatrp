@@ -14,18 +14,28 @@
                 href="/"
                 :active="$route.path == '/'"
               >{{$static.metadata.siteName}}</b-nav-item>
-              <b-nav-item
-                class="nav__item"
-                href="/profile"
-                :active="$route.path == '/profile'"
-              >Profile</b-nav-item>
+
               <b-nav-item
                 class="nav__item"
                 href="/products"
                 :active="$route.path == '/products'"
-              >Product Information</b-nav-item>
+              >Products</b-nav-item>
+
+              <b-nav-item
+                class="nav__item"
+                href="/portofolio"
+                :active="$route.path == '/portofolio'"
+              >Portofolio</b-nav-item>
+
+              <b-nav-item
+                class="nav__item"
+                href="/simulation"
+                :active="$route.path == '/simulation'"
+              >Simulation</b-nav-item>
+
+              <b-nav-item class="nav__item" v-scroll-to="'#footerContact'">Contact</b-nav-item>
+
               <b-nav-item class="nav__item" href="/blogs" :active="$route.path == '/blogs'">Blogs</b-nav-item>
-              <b-nav-item class="nav__item" v-scroll-to="'#footerContact'">Contact Us</b-nav-item>
             </b-navbar-nav>
           </b-collapse>
         </b-container>
