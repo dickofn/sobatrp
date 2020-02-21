@@ -3,14 +3,7 @@
     <section class="top">
       <b-container>
         <div class="title">
-          <h1 class="font-weight-bold">
-            <span class="text-primary mr-2">SObat</span>
-            <span class="text-secondary">Rp</span>
-          </h1>
-          <h5>
-            <span class="text-primary mr-2">Solar Baterai</span>
-            <span class="text-secondary">Rumah Pintar</span>
-          </h5>
+          <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" />
         </div>
       </b-container>
     </section>
