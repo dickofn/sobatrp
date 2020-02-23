@@ -10,7 +10,7 @@
 
     <section class="benefit">
       <b-container>
-        <h4 class="title text-title">What Do You Get from SObat Rp ?</h4>
+        <h4 class="title text-title">What Do You Get from <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" /> ?</h4>
         <h5 class="subtitle text-subtitle mb-5">A Hybrid Solar System – Renewable and Clean Energy</h5>
         <div class="list my-5 pb-5">
           <div class="list-item">
