@@ -48,7 +48,8 @@
       <slot />
     </div>
     <footer class="footer" id="footerContact">
-      <div class="footer__top">
+      <!-- TODO: Decoupled it -->
+      <!-- <div class="footer__top">
         <b-container>
           <b-row>
             <b-col sm="12" md="6" class="top__col">
@@ -65,7 +66,7 @@
             </b-col>
           </b-row>
         </b-container>
-      </div>
+      </div> -->
       <div class="footer__bottom">&copy; {{thisYear}} SOBATRP All Rights Reserved.</div>
     </footer>
   </div>
