@@ -31,6 +31,10 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   head.script.push({
     src: "//app.storyblok.com/storyblok-latest.js"
   });
+  head.meta.push({
+    name: 'keywords',
+    content: 'sobatrp,solar panel,renewable energy,clean energy'
+  });
 
   appOptions.store = new Vuex.Store({
     state: {
