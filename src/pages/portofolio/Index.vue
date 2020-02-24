@@ -12,7 +12,7 @@
               <div class="separator"></div>
               <div
                 class="subtitle"
-              >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam ab facilis repudiandae itaque, pariatur sed praesentium impedit quae omnis accusamus officia harum laudantium voluptatum, perspiciatis placeat quibusdam nostrum. Laudantium, obcaecati!</div>
+              >With Solar Energy we will create clean, renewable power from the sun and benefits rhe environment. Using Solar Energy instead of fossil fuels reduces carbon footprint</div>
             </div>
           </b-col>
         </b-row>
@@ -403,7 +403,7 @@ export default {
           display: flex;
           flex-wrap: wrap;
 
-          img{
+          img {
             width: 50%;
             object-fit: cover;
           }
