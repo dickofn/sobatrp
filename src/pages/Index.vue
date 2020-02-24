@@ -123,6 +123,10 @@ export default {
     .hidden_header {
       display: none;
     }
+    .table th,
+    .table td {
+      border-top: 1px solid var(--secondary);
+    }
   }
 }
 </style>
