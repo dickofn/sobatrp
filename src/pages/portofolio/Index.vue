@@ -12,7 +12,7 @@
               <div class="separator"></div>
               <div
                 class="subtitle"
-              >With Solar Energy we will create clean, renewable power from the sun and benefits rhe environment. Using Solar Energy instead of fossil fuels reduces carbon footprint</div>
+              >With Solar Energy we will create clean, renewable power from the sun and benefits the environment. Using Solar Energy instead of fossil fuels reduces carbon footprint</div>
             </div>
           </b-col>
         </b-row>
