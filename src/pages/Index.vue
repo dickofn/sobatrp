@@ -10,7 +10,10 @@
 
     <section class="benefit">
       <b-container>
-        <h4 class="title text-title">What Do You Get from <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" /> ?</h4>
+        <h4 class="title text-title">
+          What Do You Get from
+          <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" />?
+        </h4>
         <h5 class="subtitle text-subtitle mb-5">A Hybrid Solar System – Renewable and Clean Energy</h5>
         <div class="list my-5 pb-5">
           <div class="list-item">
@@ -101,9 +104,16 @@ export default {
   & section.benefit {
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
+    background-color: rgba(#b4895f, 0.3);
 
-  
+    .title {
+      text-shadow: 2px 1px 2px #eea915;
+    }
+
+    .subtitle {
+      text-shadow: 0 0 1px #888;
+    }
+  }
 }
 </style>
 
