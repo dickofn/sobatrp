@@ -69,6 +69,8 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   router.beforeEach((to, from, next) => {
     if (to.path.includes("/blog")) {
       appOptions.store.dispatch("storyblokInit", "0D8o2iqjb60Xv3V2z7uimwtt");
+    } else {
+      appOptions.store.dispatch("toogleLoading", false);
     }
     next();
   });
