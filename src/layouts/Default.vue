@@ -29,9 +29,26 @@
                 :active="$route.path == '/simulation'"
               >Simulation</b-nav-item>
 
-              <b-nav-item class="nav__item" href="/contact" :active="$route.path == '/contact'">Contact</b-nav-item>
+              <b-nav-item
+                class="nav__item"
+                href="/contact"
+                :active="$route.path == '/contact'"
+              >Contact</b-nav-item>
 
               <b-nav-item class="nav__item" href="/blogs" :active="$route.path == '/blogs'">Blogs</b-nav-item>
+
+              <b-nav-item-dropdown class="nav__item" right>
+                <template v-slot:button-content>
+                  <g-image class="nav__logo-img" src="~/assets/img/flag-en.png" alt="EN" />
+                  <span class="sr-only">Language</span>
+                </template>
+                <b-dropdown-item class="text-center bg-primary">
+                  <g-image class="nav__logo-img" src="~/assets/img/flag-en.png" alt="EN" />
+                </b-dropdown-item>
+                <b-dropdown-item class="text-center bg-primary">
+                  <g-image class="nav__logo-img" src="~/assets/img/flag-id.png" alt="ID" />
+                </b-dropdown-item>
+              </b-nav-item-dropdown>
             </b-navbar-nav>
           </b-collapse>
         </b-container>
@@ -74,13 +91,20 @@ export default {
     font-weight: 800;
     text-transform: uppercase;
     padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 1200px) {
+      padding: 1rem;
+    }
   }
 }
 
 .body {
   margin-top: 7.4rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     margin-top: 5.4rem;
   }
 
