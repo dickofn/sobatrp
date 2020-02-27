@@ -240,13 +240,6 @@ export default {
 
 <style lang="scss" scoped>
 .layout.portofolio {
-  .separator {
-    width: 10rem;
-    height: 2px;
-    background-color: var(--secondary);
-    margin: 2rem 0;
-  }
-
   & .banner {
     .row {
       background-color: var(--sky);

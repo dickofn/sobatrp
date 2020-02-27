@@ -45,6 +45,13 @@ $navbar-light-active-color: map-get($theme-colors, "primary");
   }
 }
 
+.separator {
+  width: 10rem;
+  height: 2px;
+  background-color: var(--secondary);
+  margin: 2rem 0;
+}
+
 .construction {
   min-height: 85vh;
   background: url("~@/assets/img/construction.jpg");
