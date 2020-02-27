@@ -57,6 +57,7 @@
               <div class="img">
                 <g-image class="nav__logo-img" src="~/assets/img/ben-1.png" alt="Benefit 1" />
               </div>
+              <div class="separator"></div>
               <div
                 class="txt"
               >Custom Designed System Based on Usage Characteristic to Maximize Your Efficiency</div>
@@ -65,12 +66,14 @@
               <div class="img">
                 <g-image class="nav__logo-img" src="~/assets/img/ben-2.png" alt="Benefit 2" />
               </div>
+              <div class="separator"></div>
               <div class="txt">Innovative Payment and Pricing Scheme</div>
             </b-col>
             <b-col class="ben__item mb-5 mb-lg-0 text-center" sm="12" lg="3" offset-lg="1">
               <div class="img">
                 <g-image class="nav__logo-img" src="~/assets/img/ben-3.png" alt="Benefit 3" />
               </div>
+              <div class="separator"></div>
               <div class="txt">Reliable and Long Life</div>
             </b-col>
           </b-row>
@@ -79,12 +82,14 @@
               <div class="img">
                 <g-image class="nav__logo-img" src="~/assets/img/ben-4.png" alt="Benefit 4" />
               </div>
+              <div class="separator"></div>
               <div class="txt">Free Installation and Maintenance and 24hr Service Care</div>
             </b-col>
             <b-col class="ben__item mb-5 mb-lg-0 text-center" sm="12" lg="3" offset-lg="1">
               <div class="img">
                 <g-image class="nav__logo-img" src="~/assets/img/ben-5.png" alt="Benefit 5" />
               </div>
+              <div class="separator"></div>
               <div class="txt">Reduce Carbon Footprint</div>
             </b-col>
           </b-row>
@@ -156,6 +161,13 @@ export default {
           object-fit: contain;
           margin-bottom: 1rem;
         }
+
+        .separator {
+          background-color: var(--primary);
+          width: 30%;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
   }
@@ -170,7 +182,7 @@ export default {
     }
     .table th,
     .table td {
-      border-top: 1px solid var(--secondary);
+      border-top: 2px solid var(--primary);
     }
   }
 }
