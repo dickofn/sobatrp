@@ -96,6 +96,9 @@
             </div>
           </div>
         </div>
+        <div class="text-center pt-5 mt-5">
+          <g-image class="nav__logo-img" src="~/assets/img/inverter.png" alt="Inverter System" />
+        </div>
       </b-container>
     </section>
   </Layout>
@@ -440,6 +443,11 @@ export default {
           color: #333;
         }
       }
+    }
+
+    img {
+      max-width: 100%;
+      box-shadow: 0 1rem 2rem 5px rgba(#000, 0.9);
     }
   }
 }
