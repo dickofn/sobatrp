@@ -4,6 +4,10 @@
       <b-container>
         <div class="title">
           <g-image class="nav__logo-img" src="~/assets/img/logo-large.png" alt="Logo" />
+          <div class="txt text-left text-white d-flex align-items-center" sm="12" lg="5">
+            &#8220; To provide a smart and sustainable SOLAR POWER solutions for homes,
+            <br />Housing complex, commercial buildings and industries. &#8221;
+          </div>
         </div>
       </b-container>
     </section>
@@ -14,7 +18,9 @@
           What Do You Get from
           <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" />?
         </h4>
-        <h5 class="subtitle mt-5 pt-5 text-subtitle">A Hybrid Solar System – Renewable and Clean Energy</h5>
+        <h5
+          class="subtitle mt-5 pt-5 text-subtitle"
+        >A Hybrid Solar System – Renewable and Clean Energy</h5>
         <div class="separator"></div>
         <div class="list mb-5 pb-5">
           <div class="list-item">
@@ -131,10 +137,26 @@ export default {
       width: 100%;
       padding-top: 5rem;
       padding-bottom: 5rem;
-      text-align: center;
+      text-align: left;
+
+      @media (max-width: 992px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
 
       img {
         width: 50%;
+
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+      }
+      .txt {
+        margin-top: 3rem;
+        font-weight: 900;
+        font-style: italic;
+        letter-spacing: 2px;
+        line-height: 3rem;
       }
     }
   }
