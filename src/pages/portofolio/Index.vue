@@ -248,6 +248,11 @@ export default {
   }
 
   & .banner {
+    .row {
+      background-color: var(--sky);
+      border-bottom: 2px solid var(--secondary);
+    }
+
     img {
       width: 100%;
       height: 50vh;
@@ -320,9 +325,10 @@ export default {
       }
     }
     .main__content {
+      background-color: var(--sky);
       .content {
+        color: #333;
         .title {
-          color: var(--secondary);
           margin-bottom: 2rem;
           font-weight: 700;
         }
@@ -349,6 +355,7 @@ export default {
       }
 
       .autonomous {
+        background-color: var(--sky);
         .image {
           margin-bottom: 3rem;
         }
