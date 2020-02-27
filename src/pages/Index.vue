@@ -14,8 +14,9 @@
           What Do You Get from
           <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" />?
         </h4>
-        <h5 class="subtitle text-subtitle mb-5">A Hybrid Solar System – Renewable and Clean Energy</h5>
-        <div class="list my-5 pb-5">
+        <h5 class="subtitle mt-5 pt-5 text-subtitle">A Hybrid Solar System – Renewable and Clean Energy</h5>
+        <div class="separator"></div>
+        <div class="list mb-5 pb-5">
           <div class="list-item">
             <div class="index mr-3">1.</div>
             <div
@@ -48,16 +49,45 @@
             </b-table-simple>
           </b-col>
         </b-row>
-        <h5 class="subtitle text-subtitle my-5">Benefits:</h5>
-        <div class="list">
-          <div class="list-item">High Quality Products</div>
-          <div class="list-item">Innovative Payment and Pricing Scheme</div>
-          <div class="list-item">Reliable and Long Life</div>
-          <div class="list-item">Free Installation and Maintenance and 24hr Service Care</div>
-          <div
-            class="list-item"
-          >Custom Designed System Based on Usage Characteristic to Maximize Your Efficiency</div>
-          <div class="list-item">Reduce Carbon Footprint</div>
+        <h5 class="subtitle mt-5 pt-5 text-subtitle">Benefits:</h5>
+        <div class="separator"></div>
+        <div class="ben mt-5">
+          <b-row class="mb-lg-5 pb-lg-5">
+            <b-col class="ben__item mb-5 mb-lg-0 text-center" sm="12" lg="3" offset-lg="1">
+              <div class="img">
+                <g-image class="nav__logo-img" src="~/assets/img/ben-1.png" alt="Benefit 1" />
+              </div>
+              <div
+                class="txt"
+              >Custom Designed System Based on Usage Characteristic to Maximize Your Efficiency</div>
+            </b-col>
+            <b-col class="ben__item mb-5 mb-lg-0 text-center" sm="12" lg="3" offset-lg="1">
+              <div class="img">
+                <g-image class="nav__logo-img" src="~/assets/img/ben-2.png" alt="Benefit 2" />
+              </div>
+              <div class="txt">Innovative Payment and Pricing Scheme</div>
+            </b-col>
+            <b-col class="ben__item mb-5 mb-lg-0 text-center" sm="12" lg="3" offset-lg="1">
+              <div class="img">
+                <g-image class="nav__logo-img" src="~/assets/img/ben-3.png" alt="Benefit 3" />
+              </div>
+              <div class="txt">Reliable and Long Life</div>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col class="ben__item mb-5 mb-lg-0 text-center" sm="12" lg="3" offset-lg="3">
+              <div class="img">
+                <g-image class="nav__logo-img" src="~/assets/img/ben-4.png" alt="Benefit 4" />
+              </div>
+              <div class="txt">Free Installation and Maintenance and 24hr Service Care</div>
+            </b-col>
+            <b-col class="ben__item mb-5 mb-lg-0 text-center" sm="12" lg="3" offset-lg="1">
+              <div class="img">
+                <g-image class="nav__logo-img" src="~/assets/img/ben-5.png" alt="Benefit 5" />
+              </div>
+              <div class="txt">Reduce Carbon Footprint</div>
+            </b-col>
+          </b-row>
         </div>
       </b-container>
     </section>
@@ -94,9 +124,12 @@ export default {
 
     .title {
       width: 100%;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      text-align: center;
 
       img {
-        width: 100%;
+        width: 50%;
       }
     }
   }
@@ -104,7 +137,6 @@ export default {
   & section.benefit {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: rgba(#b4895f, 0.3);
 
     .title {
       text-shadow: 2px 1px 2px #eea915;
@@ -112,6 +144,19 @@ export default {
 
     .subtitle {
       text-shadow: 0 0 1px #888;
+    }
+
+    .ben {
+      margin-top: 5rem;
+
+      .ben__item {
+        img {
+          width: auto;
+          max-height: 10rem;
+          object-fit: contain;
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 }
