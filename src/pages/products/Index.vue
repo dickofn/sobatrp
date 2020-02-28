@@ -96,9 +96,9 @@
             </div>
           </div>
         </div>
-        <div class="text-center pt-5 mt-5">
+        <!-- <div class="text-center pt-5 mt-5">
           <g-image class="nav__logo-img" src="~/assets/img/inverter.png" alt="Inverter System" />
-        </div>
+        </!--> -->
       </b-container>
     </section>
   </Layout>
