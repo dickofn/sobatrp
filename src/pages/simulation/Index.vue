@@ -120,8 +120,20 @@ export default {
   }
 
   & .form {
+    text-shadow: 0 0 1rem #fff;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    background: linear-gradient(
+        to bottom,
+        rgba(#fff, 0.6),
+        rgba(#fff, 0.8),
+        rgba(#fff, 1),
+        rgba(#fff, 1),
+        rgba(#fff, 1),
+        rgba(#fff, 0.8),
+        rgba(#fff, 0.6)
+      ),
+      url("~@/assets/img/seamless-leaf.jpg");
   }
 }
 </style>
