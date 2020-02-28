@@ -348,7 +348,6 @@ export default {
       }
 
       .autonomous {
-        background-color: var(--sky);
         .image {
           margin-bottom: 3rem;
         }
