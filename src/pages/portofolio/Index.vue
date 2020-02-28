@@ -240,7 +240,7 @@ export default {
 
 <style lang="scss" scoped>
 .layout.portofolio {
-  & .banner {
+  & section.banner {
     .row {
       background-color: var(--sky);
       border-bottom: 2px solid var(--secondary);
@@ -264,7 +264,7 @@ export default {
     }
   }
 
-  & .main {
+  & section.main {
     .main__nav {
       background-color: var(--secondary);
 

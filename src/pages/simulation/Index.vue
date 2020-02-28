@@ -111,7 +111,7 @@ export default {
 
 <style lang="scss" scoped>
 .layout.simulation {
-  & .banner {
+  & section.banner {
     img {
       width: 100%;
       max-height: 80vh;
@@ -119,7 +119,7 @@ export default {
     }
   }
 
-  & .form {
+  & section.form {
     text-shadow: 0 0 1rem #fff;
     padding-top: 5rem;
     padding-bottom: 5rem;
