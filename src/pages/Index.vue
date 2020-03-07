@@ -3,14 +3,7 @@
     <section class="top">
       <b-container>
         <div class="title">
-          <g-image
-            data-aos="fade-left"
-            data-aos-once="true"
-            data-aos-duration="3000"
-            class="nav__logo-img"
-            src="~/assets/img/logo-large.png"
-            alt="Logo"
-          />
+          <g-image class="nav__logo-img" src="~/assets/img/logo-large.png" alt="Logo" />
           <div
             data-aos="fade-right"
             data-aos-once="true"
