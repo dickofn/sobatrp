@@ -9,6 +9,9 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import VueScrollTo from "vue-scrollto";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import StoryblokVue from "storyblok-vue";
 import StoryblokClient from "storyblok-js-client";
 
@@ -26,14 +29,18 @@ export default function(Vue, { router, head, isClient, appOptions }) {
   Vue.use(StoryblokVue);
   Vue.use(Vuex);
 
+  if (process.isClient) {
+    AOS.init({ disable: "phone" });
+  }
+
   Vue.component("Layout", DefaultLayout);
 
   head.script.push({
     src: "//app.storyblok.com/storyblok-latest.js"
   });
   head.meta.push({
-    name: 'keywords',
-    content: 'sobatrp,solar panel,renewable energy,clean energy'
+    name: "keywords",
+    content: "sobatrp,solar panel,renewable energy,clean energy"
   });
 
   appOptions.store = new Vuex.Store({

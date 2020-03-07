@@ -1,6 +1,6 @@
 <template>
   <Layout class="portofolio">
-    <section class="banner">
+    <section data-aos="slide-down" data-aos-once="true" class="banner">
       <b-container>
         <b-row class="align-items-center">
           <b-col sm="12" lg="8" class="pl-lg-0">
@@ -18,7 +18,7 @@
         </b-row>
       </b-container>
     </section>
-    <section class="main">
+    <section data-aos="slide-up" data-aos-once="true" class="main">
       <b-container>
         <b-row>
           <b-col sm="12" lg="3" class="main__nav">

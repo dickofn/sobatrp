@@ -2,30 +2,66 @@
   <Layout class="products">
     <section class="panel">
       <b-container>
-        <h4 class="title text-title">Solar Panel</h4>
+        <h4
+          data-aos="zoom-out"
+          data-aos-once="true"
+          data-aos-duration="500"
+          class="title text-title"
+        >Solar Panel</h4>
         <div class="cards font-weight-light">
           <b-row class="justify-space-between">
-            <b-col class="card-container" sm="12" md="6" lg="3">
+            <b-col
+              data-aos="zoom-out-right"
+              data-aos-once="true"
+              class="card-container"
+              sm="12"
+              md="6"
+              lg="3"
+            >
               <div class="card">High conversion efficiency and more power output per square meter</div>
             </b-col>
-            <b-col class="card-container" sm="12" md="6" lg="3">
+            <b-col
+              data-aos="zoom-out-right"
+              data-aos-once="true"
+              data-aos-delay="100"
+              class="card-container"
+              sm="12"
+              md="6"
+              lg="3"
+            >
               <div
                 class="card"
               >High Transmission glass feature a unique anti-reflective coating that directs more light on the solar cells, resulting in higher energy yield.</div>
             </b-col>
-            <b-col class="card-container" sm="12" md="6" lg="3">
+            <b-col
+              data-aos="zoom-out-right"
+              data-aos-once="true"
+              data-aos-delay="200"
+              class="card-container"
+              sm="12"
+              md="6"
+              lg="3"
+            >
               <div
                 class="card"
               >Tested in accordance to the standard IEC 62804, our PV modules have demonstrated resistance against PID (Potential Induced Degradation)</div>
             </b-col>
-            <b-col class="card-container" sm="12" md="6" lg="3">
+            <b-col
+              data-aos="zoom-out-right"
+              data-aos-once="true"
+              data-aos-delay="300"
+              class="card-container"
+              sm="12"
+              md="6"
+              lg="3"
+            >
               <div
                 class="card"
               >Durable PV modules, independently tested for harsh inviromental conditions such as exposure to salt mist, ammonia and known PID risk factors</div>
             </b-col>
           </b-row>
         </div>
-        <div class="info">
+        <div data-aos="zoom-out" data-aos-once="true" class="info">
           <div
             class="info-item"
           >&#9635; &nbsp; Applying the latest technology and well proven of P-type</div>
@@ -37,25 +73,25 @@
 
     <section class="battery">
       <b-container>
-        <h4 class="title text-title">Lithium Ion Battery</h4>
+        <h4 data-aos="zoom-in" data-aos-duration="500" class="title text-title">Lithium Ion Battery</h4>
         <b-row align-v="center">
           <b-col class="text-container" sm="12" lg="8" offset-lg="2">
             <div class="flips">
-              <div class="flip-item flip-item--1">
+              <div data-aos="zoom-in-left" data-aos-delay="300" class="flip-item flip-item--1">
                 <div class="flip flip--front">The Safest Lithium Battery</div>
                 <div
                   class="flip flip--back"
                 >Chemically stable, Resist in High Temp without decomposing and not flammable</div>
               </div>
-              <div class="flip-item flip-item--2">
+              <div data-aos="zoom-in-left" data-aos-delay="200" class="flip-item flip-item--2">
                 <div class="flip flip--front">Optimal Energy</div>
                 <div class="flip flip--back">Density in volume and weight</div>
               </div>
-              <div class="flip-item flip-item--3">
+              <div data-aos="zoom-in-left" data-aos-delay="100" class="flip-item flip-item--3">
                 <div class="flip flip--front">High Efficiency</div>
                 <div class="flip flip--back">High charging rate reach 98%</div>
               </div>
-              <div class="flip-item flip-item--4">
+              <div data-aos="zoom-in-left" class="flip-item flip-item--4">
                 <div class="flip flip--front">Rechargeable and long life cycle</div>
                 <div class="flip flip--back">Over 4000 cycles</div>
               </div>
@@ -67,7 +103,7 @@
 
     <section class="inverter">
       <b-container>
-        <div class="card">
+        <div data-aos="fade-up" class="card">
           <h4 class="card-title text-title">Inverter System</h4>
           <div class="card-content">
             <div class="list">
@@ -98,7 +134,8 @@
         </div>
         <!-- <div class="text-center pt-5 mt-5">
           <g-image class="nav__logo-img" src="~/assets/img/inverter.png" alt="Inverter System" />
-        </!--> -->
+        </!-->
+        -->
       </b-container>
     </section>
   </Layout>

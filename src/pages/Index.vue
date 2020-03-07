@@ -3,8 +3,22 @@
     <section class="top">
       <b-container>
         <div class="title">
-          <g-image class="nav__logo-img" src="~/assets/img/logo-large.png" alt="Logo" />
-          <div class="txt text-left text-white d-flex align-items-center" sm="12" lg="5">
+          <g-image
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="3000"
+            class="nav__logo-img"
+            src="~/assets/img/logo-large.png"
+            alt="Logo"
+          />
+          <div
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="3000"
+            class="txt text-left text-white d-flex align-items-center"
+            sm="12"
+            lg="5"
+          >
             &#8220; To provide a smart and sustainable SOLAR POWER solutions for homes,
             <br />Housing complex, commercial buildings and industries. &#8221;
           </div>
@@ -14,23 +28,26 @@
 
     <section class="benefit">
       <b-container>
-        <h4 class="title text-title">
+        <h4 data-aos="fade" class="title text-title">
           What Do You Get from
           <g-image class="nav__logo-img" src="~/assets/img/logo.png" alt="Logo" />?
         </h4>
         <h5
+          data-aos="fade"
           class="subtitle mt-5 pt-5 text-subtitle"
         >A Hybrid Solar System – Renewable and Clean Energy</h5>
         <div class="separator"></div>
         <div class="hybrid">
           <b-row class="justify-content-center">
             <b-col
+              data-aos="fade"
               sm="12"
               md="8"
               lg="4"
               class="content"
             >Hybrid Solar Systems generate power in the same way as a common grid-tie solar system but use special hybrid inverters and batteries to store energy for later use</b-col>
             <b-col
+              data-aos="fade"
               sm="12"
               md="8"
               lg="4"
@@ -40,7 +57,7 @@
         </div>
         <b-row class="justify-content-center">
           <b-col sm="12" md="8">
-            <b-table-simple fixed thead-class="hidden_header">
+            <b-table-simple data-aos="fade" fixed thead-class="hidden_header">
               <b-tbody>
                 <b-tr>
                   <b-td rowspan="2">P type monocrystalline Silicon Photovoltaics Solar Panel</b-td>
@@ -57,12 +74,12 @@
             </b-table-simple>
           </b-col>
         </b-row>
-        <h5 class="subtitle mt-5 pt-5 text-subtitle">Benefits:</h5>
+        <h5 data-aos="fade" class="subtitle mt-5 pt-5 text-subtitle">Benefits:</h5>
         <div class="separator"></div>
         <div class="ben mt-5">
           <b-row class="mb-lg-5 pb-lg-5">
             <b-col class="mb-5 mb-lg-0 text-center" md="12" lg="4">
-              <div class="ben__item">
+              <div data-aos="zoom-in" class="ben__item">
                 <div class="img">
                   <g-image class="nav__logo-img" src="~/assets/img/ben-6.png" alt="Benefit 6" />
                 </div>
@@ -70,7 +87,7 @@
               </div>
             </b-col>
             <b-col class="mb-5 mb-lg-0 text-center" md="12" lg="4">
-              <div class="ben__item">
+              <div data-aos="zoom-in" data-aos-delay="100" class="ben__item">
                 <div class="img">
                   <g-image class="nav__logo-img" src="~/assets/img/ben-2.png" alt="Benefit 2" />
                 </div>
@@ -78,7 +95,7 @@
               </div>
             </b-col>
             <b-col class="mb-5 mb-lg-0 text-center" md="12" lg="4">
-              <div class="ben__item">
+              <div data-aos="zoom-in" data-aos-delay="200" class="ben__item">
                 <div class="img">
                   <g-image class="nav__logo-img" src="~/assets/img/ben-3.png" alt="Benefit 3" />
                 </div>
@@ -88,7 +105,7 @@
           </b-row>
           <b-row>
             <b-col class="mb-5 mb-lg-0 text-center" md="12" lg="4">
-              <div class="ben__item">
+              <div data-aos="zoom-in" class="ben__item">
                 <div class="img">
                   <g-image class="nav__logo-img" src="~/assets/img/ben-4.png" alt="Benefit 4" />
                 </div>
@@ -96,7 +113,7 @@
               </div>
             </b-col>
             <b-col class="mb-5 mb-lg-0 text-center" md="12" lg="4">
-              <div class="ben__item">
+              <div data-aos="zoom-in" data-aos-delay="100" class="ben__item">
                 <div class="img">
                   <g-image class="nav__logo-img" src="~/assets/img/ben-1.png" alt="Benefit 1" />
                 </div>
@@ -106,7 +123,7 @@
               </div>
             </b-col>
             <b-col class="mb-5 mb-lg-0 text-center" md="12" lg="4">
-              <div class="ben__item">
+              <div data-aos="zoom-in" data-aos-delay="200" class="ben__item">
                 <div class="img">
                   <g-image class="nav__logo-img" src="~/assets/img/ben-5.png" alt="Benefit 5" />
                 </div>
@@ -134,8 +151,7 @@ export default {
 <style lang="scss" scoped>
 .layout.home {
   & section.top {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    min-height: 100vh;
     background: linear-gradient(
         to left,
         rgba(#000, 0.9),
@@ -147,6 +163,8 @@ export default {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 
     .title {
       width: 100%;
